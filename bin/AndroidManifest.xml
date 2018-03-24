@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onezao.onezao.zao"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".AdminActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.onezao.onezao.intentactivity1205.IntentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/> 
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/mpeg3"/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/x-mpeg-3 "/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/mpeg "/>
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/x-mpeg "/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.onezao.onezao.dialer1113.DialerActivity0001"></activity>
+        <activity android:name="com.onezao.onezao.dialer1113.DialerActivity0002"></activity>
+        <activity android:name="com.onezao.onezao.dialer1113.DialerActivity0003"></activity>
+        <activity android:name="com.onezao.onezao.dialer1113.DialerActivity0004"></activity>
+        <activity android:name="com.onezao.onezao.log1114.LogActivity"></activity>
+        <activity android:name="com.onezao.onezao.login1114.LoginActivity"></activity>
+        <activity android:name="com.onezao.onezao.sdcardspace1115.SpaceActivity"></activity>
+        <activity android:name="com.onezao.onezao.login1114.LoginSpActivity"></activity>
+        <activity android:name="com.onezao.onezao.xmlseralizer1116.XmlSeralizerActivity"></activity>
+        <activity android:name="com.onezao.onezao.sqlite1118.SqliteActivity"></activity>
+        <activity android:name="com.onezao.onezao.sqlite1118.TransActivity"></activity>
+        <activity android:name="com.onezao.onezao.listview1121.ListViewActivity"></activity>
+        <activity android:name="com.onezao.onezao.listview1121.MoreListViewActivity"></activity>
+        <activity android:name="com.onezao.onezao.listview1121.ArrayAdapterActivity"></activity>
+        <activity android:name="com.onezao.onezao.listview1121.SimpleAdapterActivity"></activity>
+        <activity android:name="com.onezao.onezao.database2listview.DataToListActivity"></activity>
+        <activity android:name="com.onezao.onezao.htmlcodeviewer1124.HtmlCodeActivity"></activity>
+        <activity android:name="com.onezao.onezao.htmlcodeviewer1124.HtmlCodeHandlerActivity"></activity>
+        <activity android:name="com.onezao.onezao.htmlcodeviewer1124.ShowImageActivity"></activity>
+        <activity android:name="com.onezao.onezao.handlerdelay1127.DelayHandlerActivity"></activity>
+        <activity android:name="com.onezao.onezao.zhihurss1129.ZhihuRssActivity"></activity>
+        <activity android:name="com.onezao.onezao.rpcalc1207.RpCalcActivity"></activity>
+        <activity android:name="com.onezao.onezao.rpcalc1207.ShowRpCalcActivity"></activity>
+        <activity android:name="com.onezao.onezao.sendsms1208.SmsActivity"></activity>
+        <activity android:name="com.onezao.onezao.smssender1209.ContactActivity"></activity>
+        <activity android:name="com.onezao.onezao.smssender1209.ReplyActivity"></activity>
+        <activity android:name="com.onezao.onezao.smssender1209.SmsSenderActivity"></activity>
+        <activity android:name="com.onezao.onezao.ipdialer1210.IPDialerActivity"></activity>
+        <activity android:name="com.onezao.onezao.smslistener1210.SmsReceiverActivity"></activity>
+        <activity android:name="com.onezao.onezao.sendbroadcast1211.SendBroadcastActivity"></activity>
+        <activity android:name="com.onezao.onezao.sendrice1211.SendOrderBroadcastActivity"></activity>
+        <activity android:name="com.onezao.onezao.rigisterreceiver1212.RigisterReceiverActivity"></activity>
+        <activity android:name="com.onezao.onezao.autosmslistener1212.AutoSmsReceiverActivity"></activity>
+        <activity android:name="com.onezao.onezao.alertdialog1213.AlertDialogActivity"></activity>
+        <activity android:name="com.onezao.onezao.startservice1214.ServiceActivity"></activity>
+        <activity android:name="com.onezao.onezao.phonerecorder1214.RecordServiceActivity"></activity>
+        <activity android:name="com.onezao.onezao.bindservice1214.BindServiceActivity"></activity>
+        <activity android:name="com.onezao.onezao.musicframework1216.MusicPlayerFrameActivity"></activity>
+        <activity android:name="com.onezao.onezao.mixstartservice1217.MixStartActivity"></activity>
+        <activity android:name="com.onezao.onezao.contentprovider1224.ContentProviderActivity"></activity>
+        <activity android:name="com.onezao.onezao.smsbackup1225.SmsBackupActivity"></activity>
+        <activity android:name="com.onezao.onezao.querycontact1229.QueryContactActivity"></activity>
+        <activity android:name="com.onezao.onezao.insertcontact0101.InsertContactActivity"></activity>
+        <activity android:name="com.onezao.onezao.loadpic0107.LoadPicActivity"></activity>
+        <activity android:name="com.onezao.onezao.piccopy0107.PicCopyActivity"></activity>
+        <activity android:name="com.onezao.onezao.processpic0108.ProcessPicActivity"></activity>
+        <activity android:name="com.onezao.onezao.paintboard0108.PaintBoardActivity"/>
+        <activity android:name="com.onezao.onezao.picgallery0110.PicGalleryActivity"></activity>
+        <activity android:name="com.onezao.onezao.erasecloth0111.EraseClothActivity"></activity>
+        <activity android:name="com.onezao.onezao.musicplayer0111.MusicPlayerActivity"></activity>
+        <activity android:name="com.onezao.onezao.playnetmusic0113.PlayNetMusicActivity"></activity>
+        <activity android:name="com.onezao.onezao.playnetvideo0113.PlayNetVideoActivity"></activity>
+        <activity android:name="com.onezao.onezao.videoview0114.VideoViewActivity"
+              android:configChanges="orientation|screenSize"></activity>
+        <activity android:name="com.onezao.onezao.fragmentdemo0116.FragmentDemoActivity"></activity>
+        <activity android:name="com.onezao.onezao.fragmentdynamic0118.FragmentDynamicActivity"></activity>
+        <activity android:name="com.onezao.onezao.weixin0121.WeixinActivity"></activity>
+        <activity android:name="com.onezao.onezao.fragmentcomm0122.FragmentCommActivity"></activity>
+        <activity android:name="com.onezao.onezao.autocomplete0123.AutoCompleteActivity"></activity>
+        <activity android:name="com.onezao.onezao.drawableanim0123.DrawableAnimationActivity"></activity>
+        <activity android:name="com.onezao.onezao.viewanim0124.ViewAnimationActivity"></activity>
+        <activity android:name="com.onezao.onezao.notificationdemo0125.NotificationDemoActivity"></activity>
+        <activity android:name="com.onezao.onezao.pressurediagram0130.PressureDiagramActivity"></activity>
+        <activity android:name="com.onezao.onezao.mobilesafe0207.activity.SplashActivity"></activity>
+        <activity android:name="com.onezao.onezao.mobilesafe0207.activity.HomeActivity"></activity>
+        
+        <service android:name="com.onezao.onezao.startservice1214.StartService"></service>
+        <service android:name="com.onezao.onezao.phonerecorder1214.RecordService"></service>
+        <service android:name="com.onezao.onezao.phonerecorder1214.RecordService2"></service>
+        <service android:name="com.onezao.onezao.bindservice1214.BindService"></service>
+        <service android:name="com.onezao.onezao.musicframework1216.MusicPlayerFrameService"></service>
+        <service android:name="com.onezao.onezao.mixstartservice1217.MixStartService"></service>
+        <service android:name="com.onezao.onezao.remotemethod1218.RemoteService">
+            <intent-filter>
+                <action android:name="com.onezao.remoteservice"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.onezao.onezao.musicplayer0111.MusicPlayerService"/>    
+        
+        <receiver android:name="com.onezao.onezao.ipdialer1210.IpDialerReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+            </intent-filter>
+        </receiver>
+<!--         <receiver android:name="com.onezao.onezao.smslistener1210.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver> -->
+          <receiver android:name="com.onezao.onezao.autosmslistener1212.AutoSmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.applistener1211.AppInstallReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.bootreceiver1211.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.sendbroadcast1211.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.onezao.broadcast.action"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.sendrice1211.StateReceiver">
+            <intent-filter  android:priority="1000">
+                <action android:name="com.onezao.broadcast.sendrice"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.sendrice1211.CityReceiver">
+            <intent-filter  android:priority="800">
+                <action android:name="com.onezao.broadcast.sendrice"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.sendrice1211.TownReceiver">
+            <intent-filter  android:priority="600">
+                <action android:name="com.onezao.broadcast.sendrice"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.sendrice1211.FarmerReceiver">
+            <intent-filter  android:priority="100">
+                <action android:name="com.onezao.broadcast.sendrice"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.onezao.onezao.phonerecorder1214.BootServiceReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        
+        <provider android:name="com.onezao.onezao.contentprovider1224.MyProvider"
+                  android:authorities="com.onezao.provider1224"
+                  android:exported="true"></provider>
+    </application>
+
+</manifest>

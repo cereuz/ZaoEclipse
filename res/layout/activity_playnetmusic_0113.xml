@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText 
+        android:id="@+id/et_netmusic_0113"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/et_netmusic_path_0113"/>
+    <Button 
+        android:id="@+id/btn_netmusic_0113"
+        android:layout_below="@id/et_netmusic_0113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="play"
+        android:text="@string/playpause"/>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_margin="6dp">
+    <EditText 
+        android:id="@+id/et_netvideo_0113"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/et_video_path_0113"/>
+    <Button 
+        android:id="@+id/btn_netvideoprepare_0113"
+        android:layout_below="@id/et_netvideo_0113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="prepare"
+        android:text="@string/prepare"/>
+    <Button 
+        android:id="@+id/btn_netvideostart_0113"
+        android:layout_below="@id/et_netvideo_0113"
+        android:layout_toEndOf="@id/btn_netvideoprepare_0113"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="@string/playpause"/>
+    <SurfaceView 
+        android:id="@+id/sv_netvideo_0113"
+        android:layout_below="@id/btn_netvideostart_0113"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

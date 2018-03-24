@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView 
+        android:id="@+id/tv_functionlist_0207"
+        android:text="@string/function_list_0207"
+        style="@style/TitleStyle0207"/>
+    <TextView 
+        android:layout_below="@id/tv_functionlist_0207"
+        android:text="@string/marquee_0207"
+        android:textColor="#000"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

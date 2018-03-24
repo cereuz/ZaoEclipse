@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_processpic_0108"
+        android:onClick="showPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/htmlpic"/>
+    <TextView
+        android:id="@+id/tv_processpic_0108"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText 
+        android:id="@+id/et_processpic_0108"
+        android:layout_below="@id/btn_processpic_0108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/picpath2"/>
+     <EditText
+        android:id="@+id/et_matrixpic_0108"        
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/btn_processpic_0108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/matrix"/>
+            
+    <ImageView 
+        android:id="@+id/iv_image_0108"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_processpic_0108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView 
+        android:id="@+id/iv_imagecopy_0108"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/iv_image_0108"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+</ScrollView>

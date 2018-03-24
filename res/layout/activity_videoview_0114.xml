@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText 
+        android:id="@+id/et_videoview_0114"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/et_video_path_0113"/>
+    <Button 
+        android:id="@+id/btn_videoviewprepare_0114"
+        android:layout_below="@id/et_videoview_0114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="prepare"
+        android:text="@string/prepare"/>
+    <Button 
+        android:id="@+id/btn_videoviewstart_0114"
+        android:layout_below="@id/et_videoview_0114"
+        android:layout_toEndOf="@id/btn_videoviewprepare_0114"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="@string/playpause"/>
+    <VideoView 
+        android:id="@+id/vv_videoview_0114"
+        android:layout_below="@id/btn_videoviewstart_0114"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+        android:id="@+id/ll_button_0121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ao2"
+        android:orientation="horizontal">
+<!--         <TextView
+            android:id="@+id/tv_index_0121"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="微信"
+            android:textColor="#1ac045"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/indexon" 
+            /> -->
+     <ImageButton 
+            android:id="@+id/ib_index_0121"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/indexoff"/> 
+        <ImageButton 
+            android:id="@+id/ib_contact_0121"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/contactoff"/>
+        <ImageButton 
+            android:id="@+id/ib_discover_0121"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/discoveroff"/>
+        <ImageButton 
+            android:id="@+id/ib_me_0121"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/meoff"/>
+
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/fragment_weixin_0121"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_button_0121"
+        android:gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</RelativeLayout>

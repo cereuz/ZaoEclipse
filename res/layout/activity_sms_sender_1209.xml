@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp">
+
+    <Button
+        android:id="@+id/btn_smssender_select"
+        android:text="@string/select"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_smssender_num"
+        android:layout_toStartOf="@+id/btn_smssender_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_smssender_context"
+        android:layout_below="@+id/et_smssender_num"
+        android:gravity="start"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_smssender_context"
+        android:layout_alignParentBottom="true"
+        android:text="@string/insert_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_smssender_send"
+        android:layout_alignParentBottom="true"
+        android:text="@string/send_sms"
+        android:layout_toRightOf="@id/btn_smssender_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

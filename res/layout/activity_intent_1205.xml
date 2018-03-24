@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <EditText 
+        android:id="@+id/et_intent_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_about"
+        android:maxLines="1"/>
+    <ScrollView 
+        android:layout_below="@id/et_intent_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText 
+            android:text="@string/texturl_show"
+            android:id="@+id/et_intent_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>   
+
+</RelativeLayout>
